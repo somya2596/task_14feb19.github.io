@@ -1,0 +1,105 @@
+
+    ul {
+        padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+
+    ul li a:hover {
+        color: sienna;
+        background: #939393;
+    }
+
+    ul li ul.dropdown {
+        min-width: 100%;
+        /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+
+    ul li:hover ul.dropdown {
+        display: block;
+        /* Display the dropdown */
+    }
+
+    ul li ul.dropdown li {
+        display: block;
+    }
+
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .overlay {
+        position: absolute;
+        bottom: 0;
+        background: rgb(0, 0, 0);
+        background: rgba(0, 0, 0, 0.5);
+        /* Black see-through */
+        color: #f1f1f1;
+        width: 91%;
+        transition: .5s ease;
+        opacity: 0;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .thumbnail:hover .overlay {
+        opacity: 1;
+    }
+
+
+    .scroll {
+        background-color: black;
+    }
+
+    .image {
+        height: 60%;
+        width: 100%;
+    }
+
+    .change {
+        width: 100vw;
+        height: 100vh;
+        text-align: center;
+        background-position: center;
+        background-repeat: no-repeat;
+
+    }
+
+    .footer_container {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+
+        height: 15%;
+        color: black;
+    }
+    
